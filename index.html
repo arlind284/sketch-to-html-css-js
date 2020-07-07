@@ -1,294 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
-    <meta
-      name="description"
-      value="The description of this cool one image carousel comes sliding in from behind the image when hovering over it while the carousel is decreasing in width. By setting the direction-option to right, the items.start option to -1 and make the pagination bullets float right, the carousel is actually scrolling backward."
-    />
-    <meta
-      name="keywords"
-      value="carousel, image, description, jquery, example"
-    />
+    <meta name="description"
+        value="The description of this cool one image carousel comes sliding in from behind the image when hovering over it while the carousel is decreasing in width. By setting the direction-option to right, the items.start option to -1 and make the pagination bullets float right, the carousel is actually scrolling backward." />
+    <meta name="keywords" value="carousel, image, description, jquery, example" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css'>
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
-    />
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
     <!-- Latest compiled and minified CSS -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css?2">
+    <link rel="stylesheet" href="style.css?2">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+    
     <title>SOCIALAYS</title>
-    <script>
-      let bannerAnim = [
-        "ban-youtube",
-        "ban-facebook",
-        "ban-instagram",
-        "ban-twitter",
-      ];
-      let index = 0;
-      setInterval(function () {
-        document.getElementById(bannerAnim[0]).style.opacity = 0;
-        document.getElementById(bannerAnim[1]).style.opacity = 0;
-        document.getElementById(bannerAnim[2]).style.opacity = 0;
-        document.getElementById(bannerAnim[3]).style.opacity = 0;
-        document.getElementById(bannerAnim[index]).style.opacity = 1;
-        if (index === 3) {
-          index = 0;
-        } else {
-          index++;
-        }
-      }, 1400);
-    </script>
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <div class="container">
-        <div class="row">
-          <nav class="navbar navbar-expand-lg navbar-dark bg-transparent w-100">
-            <a class="navbar-brand" href="#">
-              <img
-                src="img/logo.png"
-                class="img-fluid animate__animated animate__bounce"
-                alt="logo"
-              />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-transparent w-100">
+                    <a class="navbar-brand" href="javascript:">
+                        <img src="img/logo.png" class="img-fluid animate__animated animate__bounce" alt="logo" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#"
-                    >FEATURES <span class="sr-only">(current)</span></a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">PRICING</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">ABOUT SOCIALAYS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">LOGIN</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link btn-trial" href="#">FREE TRIAL</a>
-                </li>
-              </ul>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="javascript:">FEATURES <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:">PRICING</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:">ABOUT SOCIALAYS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:">LOGIN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-trial" href="javascript:">FREE TRIAL</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-          </nav>
         </div>
-      </div>
     </header>
     <section class="social-media-header">
-      <div class="container">
-        <div class="row">
-          <div class="analyze-wrapper">
-            <h2>
-              Analyze your social media comments with advanced AI
-            </h2>
-            <p>
-              Socialays reads your comments and messages in a second, makes
-              sentiment analysis to make you know your audience better and takes
-              actions in an instant to drive success.
-            </p>
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="analyze-wrapper">
+                        <h2>
+                            Analyze your
+                            social media comments
+                            with advanced AI
+                        </h2>
+                        <p>
+                            Socialays reads your comments and messages in a second,
+                            makes sentiment analysis to make you know your audience
+                            better and takes actions in an instant to drive success.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
-    <section
-      class="social-banner animate__animated animate__fadeInRight"
-      data-aos-easing="ease-in-out-cubic"
-    >
-      <div id="banner-animation">
-        <img src="img/banner.png" alt="social-icon" class="img-fluid" />
-        <img
-          id="ban-youtube"
-          src="img/banner_youtube.png"
-          alt="social-icon"
-          class="img-fluid"
-        />
-        <img
-          id="ban-facebook"
-          src="img/banner_facebook.png"
-          alt="social-icon"
-          class="img-fluid"
-        />
-        <img
-          id="ban-instagram"
-          src="img/banner_instagram.png"
-          alt="social-icon"
-          class="img-fluid"
-        />
-        <img
-          id="ban-twitter"
-          src="img/banner_twitter.png"
-          alt="social-icon"
-          class="img-fluid"
-        />
-      </div>
-      <span class="social-btn">
-        <button class="btn btn-free">START YOUR FREE TRIAL</button>
-      </span>
-      <p>No commitment required.</p>
+    <section class="social-banner animate__animated animate__fadeInUp" data-aos-easing="ease-in-out-cubic">
+		<div class="anim-slider">
+<!--
+			<div>
+				<img src="img/anim-0.jpg" alt="social-icon" class="img-fluid w-100">
+			</div>
+-->
+			<div>
+				<img src="img/anim-1.jpg" alt="social-icon" class="img-fluid w-100">
+			</div>
+			<div>
+				<img src="img/anim-2.jpg" alt="social-icon" class="img-fluid w-100">
+			</div>
+			<div>
+				<img src="img/anim-3.jpg" alt="social-icon" class="img-fluid w-100">
+			</div>
+			<div>
+				<img src="img/anim-4.jpg" alt="social-icon" class="img-fluid w-100">
+			</div>
+			<div>
+				<img src="img/anim-3.jpg" alt="social-icon" class="img-fluid w-100">
+			</div>
+			<div>
+				<img src="img/anim-2.jpg" alt="social-icon" class="img-fluid w-100">
+			</div>
+		</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <button class="btn btn-free">START YOUR FREE TRIAL</button>
+                    <p>No commitment required.</p>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="social_icon_wrap">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 custom-wrap col-sm-6">
-            <div class="content-text">
-              <h4>Socialays read and listens for you</h4>
-              <p>
-                It’s always hard to track all your social media comments and
-                direct messages. Our next level NLP (Natural Language
-                Processing) technology makes sentiment analysis and filter your
-                comments in 4 status:
-              </p>
-              <p>Positive, Negative, Neutral, Questions.</p>
-              <h5>Learn more &#8594;</h5>
-              <button class="btn btn-free">START YOUR FREE TRIAL</button>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 custom-wrap col-sm-6 ">
+                    <div class="content-text">
+                        <h4>Socialays
+                            read and listens
+                            for you
+                        </h4>
+                        <p>It’s always hard to track all your social media
+                            comments and direct messages. Our next level NLP (Natural Language Processing) technology
+                            makes sentiment analysis and filter your comments in 4 status:
+                        </p>
+                        <p> Positive, Negative, Neutral, Questions. </p>
+                        <h5>Learn more &#8594;</h5>
+                        <button class="btn btn-free">START YOUR FREE TRIAL</button>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 right-side">
+                    <img src="img/positive.png" class="img-fluid" alt="">
+                </div>
             </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 right-side">
-            <img src="img/positive.png" class="img-fluid" alt="" />
-          </div>
         </div>
-      </div>
     </section>
-    <section class="comment-wrapper animate__animated animate__fadeInLeft">
-      <div class="container">
-        <div class="row">
-          <div class="content-text">
-            <h3>
-              No more missing your follower’s comments, messages and questions
-            </h3>
-            <p>
-              <b>
-                Socialays tracks your comments and messages and notifies you to
-                your custom need.</b
-              >
-            </p>
-            <ul class="pl-0 pt-4">
-              <li class="text-center">
-                Notify when you receive a negative comments.
-              </li>
-              <li class="text-center">
-                Notify you when a follower ask you a question in comments and DM
-                sections.
-              </li>
-            </ul>
-            <h5>Learn more &#8594;</h5>
-            <button class="btn btn-free">START YOUR FREE TRIAL</button>
-          </div>
+    <section class="comment-wrapper animate__animated animate__fadeInUp">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="content-text">
+                            <h3>No more missing your follower’s comments, messages and questions</h3>
+                            <p><b> Socialays tracks your comments and messages and notifies you to your custom need.</b></p>
+                            <ul class="pl-0 pt-4">
+                                <li class="text-center">Notify when you receive a negative comments.</li>
+                                <li class="text-center">Notify you when a follower ask you a question in comments and DM sections.</li>
+                            </ul>
+                            <h5>Learn more &#8594;</h5>
+                            <button class="btn btn-free">START YOUR FREE TRIAL</button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+       
     </section>
-    <section class="message-img">
-      <img src="img/msg.png" class="img-fluid" alt="" />
-    </section>
-
     <section class="social_action_wrap">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 custom-wrap col-sm-6">
-            <div class="content-text">
-              <h4>Socialays takes instant action for you</h4>
-              <p>
-                Socialays notifies you in a flash according to your custom
-                settings and needs.
-              </p>
-              <p>Socialays can instantly;</p>
-              <ul class="pl-0 pt-4">
-                <li>Delete a negative comment</li>
-                <li>Block a follower that makes a negative comment</li>
-              </ul>
-              <h5>Learn more &#8594;</h5>
-              <button class="btn btn-free">START YOUR FREE TRIAL</button>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 custom-wrap col-lg-6">
+                        <div class="content-text">
+                            <h4>Socialays takes
+                                    instant action
+                                    for you
+                            </h4>
+                            <p>Socialays notifies you in a flash according to 
+                                    your custom settings and needs.
+                            </p>
+                            <p> Socialays can instantly;</p>
+                            <ul class="pl-0 pt-4">
+                                    <li>Delete a negative comment</li>
+                                    <li>Block a follower that makes a negative comment</li>
+                                </ul>
+                            <h5>Learn more &#8594;</h5>
+                            <button class="btn btn-free">START YOUR FREE TRIAL</button>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-lg-6 right-side-services">
+                        <img src="img/right_img.png" class="img-fluid" alt="">
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 right-side-services">
-            <img src="img/right_img.png" class="img-fluid" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <section class="efficiency-wrapper">
-      <div class="container">
-        <div class="row">
-          <div class="text-efficiency">
-            <h4>Efficiency at Its Best</h4>
-            <div class="btn-trial">
-              <button class="btn btn-try">
-                START YOUR FREE 15 DAY TRIAL NOW
-              </button>
+        <section class="efficiency-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="text-efficiency">
+                        <h4>Efficiency at Its Best</h4>
+                        <div class="btn-trial">
+                            <button class="btn btn-try">START YOUR FREE 15 DAY TRIAL NOW</button>
+                        </div>
+                        <p>No commitment required.</p>
+                    </div>
+                </div>
             </div>
-            <p>No commitment required.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-4">
-            <img src="img/logo.png" alt="" />
-          </div>
-          <div class="col-xs-12 col-sm-4">
-            <div class="link">
-              <ul>
-                <li>FEATURES / <br />PLATFORM</li>
-                <li>PRICING / <br />MEMBERSHIP</li>
-                <li>ABOUT SOCIALAYS</li>
-                <li>PRIVACY POLICY</li>
-              </ul>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-4 text-center md-text-left">
+                        <img src="img/logo.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="link">
+                            <ul>
+                                <li>FEATURES / <br/>PLATFORM</li>
+                                <li>PRICING / <br/>MEMBERSHIP</li>
+                                <li>ABOUT SOCIALAYS</li>
+                                <li>PRIVACY POLICY</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="link">
+                                    <ul>
+                                        <li>SUPPORT</li>
+                                        <li>FREE TRIAL</li>
+                                        <li>FAQ</li>
+                                    </ul>
+                                </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-xs-12 col-sm-4">
-            <div class="link">
-              <ul>
-                <li>SUPPORT</li>
-                <li>FREE TRIAL</li>
-                <li>FAQ</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
+        </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script>
+$(".anim-slider").slick({
+	fade:true,
+	autoplay: true,
+	autoplaySpeed: 100,
+	pauseOnHover: false,
+	arrows: false
+});
+</script>
 </html>
