@@ -1,10 +1,22 @@
+@import "fonts/fenomen+sans/stylesheet.css";
+@import "fonts/gilroy/stylesheet.css";
 body {
     background-color: #021144;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Fenomen Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Gilroy', sans-serif;
+}
+
+@media (min-width: 1300px) {
+    header .container{
+        max-width: 1280px;
+    }
 }
 
 header .navbar .navbar-collapse .navbar-nav .nav-link {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 23px;
     color: #2E75DA;
     outline: none;
@@ -26,7 +38,7 @@ header .navbar .navbar-collapse .navbar-nav .nav-link.btn-trial {
     box-sizing: border-box;
     border-radius: 39.5px;
     line-height: 40px;
-    /* font-family: FenomenSans; */
+    font-family: 'Fenomen Sans', sans-serif;
 }
 
 header .navbar .navbar-collapse .navbar-nav .nav-link.btn-trial:hover {
@@ -42,15 +54,15 @@ header .navbar .navbar-collapse .navbar-nav .nav-link.btn-trial:hover {
 .analyze-wrapper {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 55%;
     align-items: center;
     margin: 0 auto;
 }
 
 .analyze-wrapper h2 {
     font-weight: normal;
-    font-size: 45px;
-    line-height: 53px;
+    font-size: 54px;
+    line-height: 1.1;
     text-align: center;
     color: #FFFFFF;
 }
@@ -60,7 +72,9 @@ header .navbar .navbar-collapse .navbar-nav .nav-link.btn-trial:hover {
     line-height: 28px;
     text-align: center;
     color: #FFFFFF;
-    padding: 55px 0 15px;
+    padding: 35px 0 15px;
+    width: 490px;
+    max-width: 100%;
 }
 
 .social-btn {
@@ -70,16 +84,20 @@ header .navbar .navbar-collapse .navbar-nav .nav-link.btn-trial:hover {
     bottom: 40px;
 }
 
+.btn {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+}
+
 .btn-free {
     font-size: 24px;
-    line-height: 18px;
     text-align: center;
     color: #FFFFFF;
     background: #2E75DA;
     border-radius: 39.5px;
     width: 415px;
-    line-height: 59px;
-
+    line-height: 2.2;
+    margin-bottom: 35px;
 }
 
 .btn-free:hover {
@@ -91,7 +109,7 @@ header .navbar .navbar-collapse .navbar-nav .nav-link.btn-trial:hover {
     font-size: 20px;
     line-height: 24px;
     color: #3b73c3;
-    /* font-family: "Fenomen Sans"; */
+    font-family: 'Fenomen Sans', sans-serif;
     text-align: center;
     margin: 0 auto;
     width: 100%;
@@ -100,7 +118,7 @@ header .navbar .navbar-collapse .navbar-nav .nav-link.btn-trial:hover {
 .social-banner {
     position: relative;
     z-index: 1;
-    margin-top: -8em;
+    margin-top: -13em;
 }
 
 .social_icon_wrap {
@@ -150,6 +168,10 @@ header .navbar .navbar-collapse .navbar-nav .nav-link.btn-trial:hover {
     margin-top: -100px;
 }
 
+.right-side-services img{
+
+}
+
 .social_icon_wrap .content-text h4 {
     font-size: 53px;
     line-height: 52px;
@@ -162,7 +184,7 @@ header .navbar .navbar-collapse .navbar-nav .nav-link.btn-trial:hover {
     font-size: 16px;
     padding: 15em 0 30em;
     background: url("img/msg.png") no-repeat;
-    background-size: 100% auto;
+    background-size: 130% auto;
     background-position: bottom center;
     min-height: 80em;
 }
@@ -310,14 +332,13 @@ footer {
 
 .link ul li {
     list-style: none;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 25px;
     color: #FFFFFF;
     margin-bottom: 20px;
 }
 
 /* responsive media (mobile device)*/
-
 @media screen and (min-width: 3000px) {
   .comment-wrapper{
     padding-bottom: 70em;
